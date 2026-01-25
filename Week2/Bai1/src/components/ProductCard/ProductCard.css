@@ -1,0 +1,44 @@
+.product-card {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 12px;          /* Bo góc */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.product-name {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.product-price {
+  color: #e53935;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.add-to-cart {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #125aa0;
+}
