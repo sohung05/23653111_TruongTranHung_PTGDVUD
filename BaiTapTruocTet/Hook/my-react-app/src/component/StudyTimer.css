@@ -1,0 +1,66 @@
+/* Container */
+.timer-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+
+  text-align: center;
+  font-family: Arial, sans-serif;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #eee;
+}
+
+/* Input */
+.timer-input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 15px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Time */
+.timer-time {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+/* Button group */
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-group button {
+  padding: 8px 15px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #2c9ac2;
+  color: white;
+
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn-group button:hover {
+  opacity: 0.8;
+}
+
+/* Session list */
+.session-list {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.session-list li {
+  margin: 5px 0;
+}

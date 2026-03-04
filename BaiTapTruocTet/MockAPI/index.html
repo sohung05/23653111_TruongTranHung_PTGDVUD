@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD API</title>
+</head>
+<body>
+
+  <h2>Quản lí sản phẩm</h2>
+
+  <input id="name" placeholder="Tên sản phẩm">
+  <input id="price" placeholder="Giá">
+
+  <br><br>
+<!-- FETCH (then) -->
+<button onclick="getFetch()">Lấy dữ liệu (Fetch)</button>
+<button onclick="addFetch()">Thêm dữ liệu (Fetch)</button>
+
+<!-- ASYNC / AWAIT -->
+<button onclick="getAsync()">Lấy dữ liệu (Async/Await)</button>
+<button onclick="addAsync()">Thêm dữ liệu (Async/Await)</button>
+
+<!-- AXIOS -->
+<button onclick="getAxios()">Lấy dữ liệu (Axios)</button>
+<button onclick="addAxios()">Thêm dữ liệu (Axios)</button>
+
+
+  <ul id="list"></ul>
+
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
