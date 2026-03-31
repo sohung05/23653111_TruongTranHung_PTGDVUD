@@ -5,7 +5,7 @@ function Bai1() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    let ignore = false; // tránh setState sau khi unmount
+    let ignore = false;
 
     async function load() {
       try {
