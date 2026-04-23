@@ -1,0 +1,119 @@
+/* ==================== HOME PAGE ==================== */
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ── Newsletter / CTA Banner ── */
+.newsletter {
+  width: 100%;
+  background: linear-gradient(135deg, var(--primary-500) 0%, #c0224f 100%);
+  padding: 80px 80px;
+}
+
+.newsletter__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.newsletter__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter__label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter__title {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.newsletter__subtitle {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 24px;
+}
+
+.newsletter__form {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.newsletter__input {
+  width: 300px;
+  height: 52px;
+  padding: 0 20px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  color: var(--white);
+  font-family: var(--font-main);
+  font-size: 15px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.newsletter__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter__input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.newsletter__btn {
+  height: 52px;
+  padding: 0 28px;
+  background: var(--white);
+  color: var(--primary-500);
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.newsletter__btn:hover {
+  background: var(--primary-100);
+}
+
+.newsletter__btn:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 900px) {
+  .newsletter {
+    padding: 60px 40px;
+  }
+  .newsletter__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter__form {
+    width: 100%;
+  }
+  .newsletter__input {
+    flex: 1;
+    width: auto;
+  }
+}

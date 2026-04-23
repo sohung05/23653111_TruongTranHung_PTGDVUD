@@ -1,0 +1,87 @@
+.search-page {
+  width: 100%;
+  min-height: calc(100vh - 160px);
+  background-color: var(--white);
+  padding: 40px 0;
+}
+
+.search-page__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  gap: 40px;
+}
+
+/* Sidebar is now handled by FilterSidebar.css */
+
+/* Main Content */
+.search-results {
+  flex: 1;
+}
+
+.no-results-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.no-results-title span {
+  color: var(--neutral-900);
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.empty-state__img {
+  width: 280px;
+  margin-bottom: 32px;
+}
+
+.empty-state__text {
+  font-size: 18px;
+  color: var(--neutral-700);
+  margin-bottom: 24px;
+}
+
+.suggestion-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.tag {
+  padding: 8px 20px;
+  background: var(--primary-100);
+  color: var(--primary-500);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.tag:nth-child(2) {
+  background: #f3f4f6;
+  color: #854ef4;
+}
+
+.tag:nth-child(3) {
+  background: #fff0f5;
+  color: #f0105e;
+}
+
+.tag:nth-child(4) {
+  background: #f0fdf4;
+  color: #10b981;
+}
+
+.tag:hover {
+  filter: brightness(0.95);
+}

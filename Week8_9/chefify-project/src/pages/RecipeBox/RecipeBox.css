@@ -1,0 +1,188 @@
+.recipe-box-page {
+  width: 100%;
+  background-color: var(--white);
+  padding: 24px 0 60px;
+}
+
+.recipe-box-page__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--neutral-500);
+  margin-bottom: 40px;
+}
+
+.breadcrumb__active {
+  color: var(--primary-500);
+}
+
+/* Profile Section */
+.profile {
+  margin-bottom: 48px;
+}
+
+.profile__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--neutral-900);
+  margin-bottom: 32px;
+  font-family: serif; /* Matches the image's heading style */
+}
+
+.profile__content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.profile__avatar-wrap {
+  flex-shrink: 0;
+}
+
+.profile__avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile__info {
+  flex: 1;
+}
+
+.profile__bio {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--neutral-600);
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.profile__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile__subscribers {
+  font-size: 14px;
+  color: var(--primary-500);
+  font-weight: 500;
+}
+
+.btn-share {
+  height: 40px;
+  padding: 0 20px;
+  background: var(--primary-500);
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.btn-share img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
+
+/* Tabs */
+.recipe-box__tabs {
+  border-bottom: 1px solid var(--neutral-200);
+  margin-bottom: 32px;
+}
+
+.tabs__list {
+  display: flex;
+  gap: 32px;
+}
+
+.tab-item {
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--neutral-500);
+  background: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  border-radius: 8px 8px 0 0;
+}
+
+.tab-item.active {
+  color: var(--primary-500);
+  border-bottom-color: var(--primary-500);
+  background: var(--primary-100);
+}
+
+/* Grid Override for Emma's Box (4 columns) */
+.recipe-box-page .recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.pagination__numbers {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-num {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--neutral-600);
+  background: none;
+  transition: all 0.2s;
+}
+
+.page-num.active {
+  background: var(--primary-500);
+  color: white;
+}
+
+.page-num:hover:not(.active) {
+  background: var(--neutral-100);
+}
+
+.page-dots {
+  color: var(--neutral-400);
+}
+
+.pagination__arrow {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  color: var(--neutral-400);
+  transition: color 0.2s;
+}
+
+.pagination__arrow:hover {
+  color: var(--primary-500);
+}
